@@ -1,0 +1,81 @@
+FileETag None
+# END Turn ETags Off
+
+Options +FollowSymlinks
+Options -Indexes
+DirectoryIndex index.php
+RewriteEngine on
+RewriteCond %{SERVER_PORT} 80 
+RewriteCond %{HTTP_HOST} !^www\.
+
+#RewriteCond %{HTTP_HOST} ^api.savemom\.in [NC]
+
+#RewriteRule ^(.*)$ https://geomeoinformatics.com/namkaval/api/$1 [R,L]
+
+#RewriteCond %{HTTP_HOST} ^http://jiovio.com\.com [NC]
+
+#RewriteCond %{HTTP_HOST} ^https://webtoall.in [NC]
+
+#RewriteRule ^(.*)$ http://maduraiscrap.com/appadmin/api/$1 [R,L]
+
+
+RewriteRule ^register user/register.php [L,QSA]
+
+RewriteRule ^register user/register.php [L,QSA]
+
+RewriteRule ^subscription common/subscription.php [L,QSA]
+
+RewriteRule ^user_subscription user/user_subscription.php [L,QSA]
+
+
+RewriteRule ^viewotherprofile user/viewotherprofile.php [L,QSA]
+
+RewriteRule ^update_points user/update_points.php [L,QSA]
+
+RewriteRule ^forgot_password user/forgot_password.php [L,QSA]
+
+RewriteRule ^change_password user/change_password.php [L,QSA]
+
+RewriteRule ^checkblock_user user/checkblock_user.php [L,QSA]
+
+RewriteRule ^reportuser user/reportuser.php [L,QSA]
+
+RewriteRule ^viewotherprofile user/viewotherprofile.php [L,QSA]
+
+RewriteRule ^nearbymatches user/nearbymatches.php [L,QSA]
+
+RewriteRule ^likesent_list user/likesent_list.php [L,QSA]
+
+RewriteRule ^editcoverpicture user/editcoverpicture.php [L,QSA]
+
+RewriteRule ^addlocation user/addlocation.php [L,QSA]
+
+RewriteRule ^viewotherprofile user/viewotherprofile.php [L,QSA]
+
+RewriteRule ^addgallery user/addgallery.php [L,QSA]
+
+RewriteRule ^deletegallery user/deletegallery.php [L,QSA]
+
+RewriteRule ^gallerylist user/gallerylist.php [L,QSA]
+
+RewriteRule ^editprofile user/editprofile.php [L,QSA]
+
+RewriteRule ^editphoto user/editprofilepicture.php [L,QSA]
+
+RewriteRule ^getprofile user/getprofile.php [L,QSA]
+
+RewriteRule ^likes_list user/likes_list.php [L,QSA]
+
+RewriteRule ^nearbymatches user/nearbymatches.php [L,QSA]
+
+RewriteRule ^newmatches user/newmatches.php [L,QSA]
+
+RewriteRule ^sentlike user/sentlike.php [L,QSA]
+
+RewriteRule ^toppicks user/toppicks.php [L,QSA]
+
+RewriteRule ^login user/login.php [L,QSA]
+
+RewriteCond %{THE_REQUEST} !^POST
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
